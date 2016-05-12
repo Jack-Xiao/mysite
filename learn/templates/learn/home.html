@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+{{ string }}
+站点：{{info_dict.site}}  内容：{{info_dict.content}}
+
+以下：
+{%for key,value in info_dict.items %}
+    {{key}} : {{value}}
+ceshi
+{% endfor %}
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home2</title>
+</head>
+<body>
+{% for i in TutorialList %}
+{{ i }}
+
+{% endfor %}
+<br/>
+{{request.user}}
+{{request.path}}
+{{request.GET.urlencode}}
+</body>
+</html>

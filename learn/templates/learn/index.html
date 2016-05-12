@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form action="/index/" method="POST">
+    {% for field in form %}
+    <div class="fieldWrapper">
+        {{ field.label_tag }}:{{ field }}
+        {{ field.errors }}
+        div>
+        {% endfor %}
+        <div class="fieldWrapper"><p><input type="submit" value="留言"/>p></div>
+    </div>
+</form>
+</body>
+</html>
